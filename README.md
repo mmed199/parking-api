@@ -1,6 +1,12 @@
 # 🚗  Parkings API
 Cette Api présente des informations sur les parkings de la region Alpes Maritimes, **actuellement Les données sont aléatoire.** </br>
 
+# 🔥 Technologies utilisées :
+- NodeJs
+- Express
+- MongoDb et Mongoose
+
+
 # 😃 Structure des données :
 Chaque parking à les informations suivantes :
 - ville: le nom de la ville (liste en dessous)
@@ -23,6 +29,7 @@ Chaque parking à les informations suivantes :
 - Villeneuve-Loubet </br>
 - Villefranche-sur-Mer </br>
 - Vallauris </br>
+</br>
 
 # 🌐 EndPoints
 ## GET sur /api/parkings </br>
@@ -32,6 +39,9 @@ Retourne la liste des parkings selon les filtres utilisés : </br>
 ✔️ Latitude & Longitude - si _Action = position_, on va utiliser cette variable pour chercher les parkings les plus proche de cette point</br>
 ✔️ MaxDistance (en mètres) - si _Action  = position_, on va utiliser cette variable comme distance maximale du point recherché</br> 
 ✔️ Disponible = ["true", "false"] ce parametre determine si on veut cherche seulement les parking disponible, ou non disponible (ne pas utiliser pour avoir les deux)
+
+## POST sur /api/parkings </br>
+vous pouvez ajouter un parking. regardez le fichier post.json pour avoir un exemple de structure.
 
 # 🌐 Exemples 
 https://parkingsapi.herokuapp.com/api/parkings List complète des parkings </br>
