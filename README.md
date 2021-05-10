@@ -13,16 +13,16 @@ Chaque parking à les informations suivantes :
 - emplacement [Latitude, Longitude] aléatoire
 
 </br>
-🌁 Les villes presentent dans la BD : 
-- Antibes
-- Menton
-- Mougins
-- Nice
-- Biot
-- Valbonne
-- Villeneuve-Loubet
-- Villefranche-sur-Mer
-- Vallauris
+🌁 Les villes presentent dans la BD : </br>
+- Antibes </br>
+- Menton </br>
+- Mougins </br>
+- Nice </br>
+- Biot </br>
+- Valbonne </br>
+- Villeneuve-Loubet </br>
+- Villefranche-sur-Mer </br>
+- Vallauris </br>
 
 # 🌐 EndPoints
 ## GET sur /api/parkings </br>
