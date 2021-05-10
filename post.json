@@ -1,0 +1,13 @@
+{
+    "ville" : "Antibes",
+    "adresse" : "400 avenue jules grec",
+    "nom:" : "Parking Anthea",
+    "placesDispo" : 25,
+    "placesTotal" : 120,
+    "prixHeure" : 1,
+    "commentaire" :"Fermé pendant les evenement au theatre",
+    "emplacement" : { 
+        "type" : "Point", 
+        "coordinates" : [43.589599, 7.1181205] 
+    }
+}
