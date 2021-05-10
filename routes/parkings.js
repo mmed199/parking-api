@@ -10,9 +10,10 @@ function getParkings(req, res){
     let maxDistance = req.query.maxDistance
     let query = {}
 
-    if(action == "ville") {
+    if(jsUcfirst(action) == "Ville") {
         query.ville = jsUcfirst(ville)
-    } else if (action == "position") {
+    } else if (jsUcfirst(action) == "Position") {
+        maxDistance = maxDistance || 100000
         query.emplacement = {
             "$near": {
                 "$geometry": {
@@ -38,8 +39,6 @@ function getParkings(req, res){
         } else {
             res.send(parkings);
         }
-
-        
     });
 }
 
